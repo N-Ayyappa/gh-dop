@@ -1,0 +1,83 @@
+ ansible-inventory -i inventory --list
+  108  ansible all -i inventory -m ping
+  109  ansible -i inventory all -m "shell" -a "touch devops-prac"
+  110  cd ansible/
+  111  ll
+  112  vim third-plabook.yml
+  113  cat second-playbook.yml
+  114  sudo ansible-playbook -i inventory third-plabook.yml -v
+  115  vim third-plabook.yml
+  116  sudo ansible-playbook -i inventory third-plabook.yml -v
+  117  vim third-plabook.yml
+  118  sudo ansible-playbook -i inventory third-plabook.yml -v
+  119  vim third-plabook.yml
+  120  sudo ansible-playbook -i inventory third-plabook.yml -v
+  121  clear
+  122  history
+  123  92
+  124  ansible all -i inventory -m ping
+  125  cd ansible/
+  126  ansible all -i inventory -m ping
+  127  ls
+  128  cd /home/ubuntu/
+  129  ls
+  130  mkdir terraform
+  131  cd terraform/
+  132  wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+  133  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+  134  sudo apt update && sudo apt install terraform
+  135  ls
+  136  terraform init
+  137  ls
+  138  ls -a
+  139  vim main.tf
+  140  cd /home/ubuntu/
+  141  sudo aws configure
+  142  date
+  143  mkdir terraform-abhishek
+  144  cd terraform-abhishek/
+  145  git init
+  146  git clone https://github.com/iam-veeramalla/terraform-zero-to-hero.git
+  147  ls -l
+  148  cd terraform-zero-to-hero/
+  149  ls
+  150  cd Day-1
+  151  ls
+  152  cat 01-fundamentals.md
+  153  ll
+  154  cat 02-getting-started.md
+  155  ll
+  156  cat 03-install.md
+  157  cat 04-aws-connection.md
+  158  cat 04-aws-connection.md | more
+  159  aws cli
+  160  sudo snap install aws-cli
+  161  sudo snap install aws-cli --classic
+  162  aws-cli
+  163  awscli
+  164  cli
+  165  sudo snap remove aws-cli --classic
+  166  sudo snap remove aws-cli
+  167  sudo apt installl awscli
+  168  sudo apt install awscli
+  169  ll
+  170  ls-a
+  171  ls -a
+  172  cat 04-aws-connection.md
+  173  aws configure
+  174  ll
+  175  cat PROJECT-ec2-instance-creation/
+  176  cd PROJECT-ec2-instance-creation/
+  177  ll
+  178  cat main.tf
+  179  cp main.tf /home/ubuntu/terraform/main.tf
+  180  cd /home/ubuntu/terraform
+  181  ls
+  182  terraform init
+  183  vim main.tf
+  184  terraform plan
+  185  terraform apply
+  186  vim main.tf
+  187  terraform plan
+  188  terraform apply
+  189  terraform destroy
